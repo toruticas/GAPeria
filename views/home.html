@@ -1,31 +1,8 @@
-<!-- <div class="carousel slide">
-  <div class="carousel-inner">
-    <div class="item active">
-      <div class="fill" style="background-image:url('/images/GAPeria_1.jpg');"></div>
-    </div>
-
-    <div class="item">
-      <div class="fill" style="background-image:url('/images/GAPeria_2.jpg');"></div>
-    </div>
-
-    <div class="item">
-      <div class="fill" style="background-image:url('/images/GAPeria_3.jpg');"></div>
-    </div>
-  </div>
-</div> -->
-
-  <uib-carousel active="active" interval="5000" no-wrap="false">
-    <uib-slide ng-repeat="slide in slides" index="$index">
-      <div class="fill" style="background-image:url('/images/GAPeria_3.jpg');">
-        <img class="fill" ng-src="{{slide}}">
-      </div>
-    </uib-slide>
-  </uib-carousel>
-  <!-- <uib-carousel class="slide" active="0" interval="5000" no-wrap="false">
-    <uib-slide ng-repeat="slide in slides">
-      <img class="fill" ng-src="{{slide}}" />
-    </uib-slide>
-  </uib-carousel> -->
+<uib-carousel active="active" interval="5000" no-wrap="false">
+  <uib-slide ng-repeat="slide in slides" index="$index">
+    <img class="fill" ng-src="{{slide}}">
+  </uib-slide>
+</uib-carousel>
 
 <div class="section text-center">
   <div class="container">
