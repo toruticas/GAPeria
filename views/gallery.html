@@ -1,0 +1,165 @@
+
+<div class="section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="gallery-songs">
+          <uib-tabset active="active">
+            <uib-tab index="0" heading="Hino do CAASO">
+              <h1>Hino do CAASO</h1>
+
+              <p style="text-align: justify;">
+                Nós somos lá de São Carlos <br>
+                Viemos aqui pra zonear <br>
+                No esporte nós somos bosta <br>
+                nosso negócio é a cachaça!
+              </p>
+
+              <p style="text-align: justify;">
+                E mesmo que nós não ganhe <br>
+                Que nós apanhe vamos brindar <br>
+                A comida da diarréia <br>
+                E as mulheres dão gonorréia
+              </p>
+
+              <p style="text-align: justify;">
+                A pinga queremos com limão <br>
+                Mulheres com muito mais tesão <br>
+                Porém se a USP amada <br>
+                Precisar da macacada <br>
+                Puta merda que cagada
+              </p>
+
+              <p style="text-align: justify;">
+                1 - 2 - 3 - 4 <br>
+              </p>
+
+              <p style="text-align: justify;">
+                Como é legal <br>
+                calcular a integral <br>
+                Mesmo sem grafite <br>
+                calculamos o limite
+              </p>
+
+              <p style="text-align: justify;">
+                Amor de graça pela cachaça <br>
+                Não há quem possa <br>
+                Com a turma nossa
+              </p>
+
+              <p style="text-align: justify;">
+                GAPERIA U-S-P CAASO CAASO <br>
+                Botando pra fudê
+              </p>
+
+              <audio class="audioDemo" controls preload="none">
+                <source src="media/hino-caaso.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </uib-tab>
+
+            <uib-tab index="1" heading="Hino do GAPeria">
+              <h1>Hino do GAPeria</h1>
+
+              <p style="text-align: justify;">
+                ÔÔÔHH.. O CAASO tem cajú e a GAPeria! <br>
+                Pra mim, não existe qualquer outra bateria!
+              </p>
+
+              <p style="text-align: justify;">
+                O que eu não quero é uma taça, <br>
+                Tô aqui pra putaria <br>
+                Sou GAPeria, toco com raça, <br>
+                E abafo qualquer outra bateria! <br>
+              </p>
+
+              <p style="text-align: justify;">
+                Um brinde com cajú na veia, <br>
+                Vamos torcer pra ganhar, <br>
+                blablablablbalabla <br>
+                blablablablablablaba <br>
+                Mas mesmo que a gente perca.. <br>
+                Também vamos comemorar!
+              </p>
+
+              <p style="text-align: justify;">
+                Eu vou beber, todo o galão, <br>
+                Eu vou beber até cair no chão!
+              </p>
+
+              <p style="text-align: justify;">
+                Surdo e caixa.. Tamborim <br>
+                Todo mundo quer beber.. O cajú até o fim!
+              </p>
+
+              <p style="justify;">
+                Você aí sem fazer nada <br>
+                Venha torcer com a batucada
+              </p>
+
+              <p style="justify;">
+                Ia jogar.. Juro que ia, <br>
+                Mas tô bebendo bem aqui com a GAPeria!
+              </p>
+
+              <audio class="audioDemo" controls preload="none">
+                <source src="media/hino-gaperia.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+              </audio>
+            </uib-tab>
+          </uib-tabset>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-colored">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="page-header">Apresentações</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-3" ng-repeat="video in videos | range:first:last">
+          <a ng-href="http://youtu.be/{{video.url}}" target="_blank">
+            <img class="img-responsive img-customer"
+              ng-src="https://i1.ytimg.com/vi/{{video.url}}/mqdefault.jpg"/>
+          </a>
+
+          <h3>{{ video.title }}</h3>
+          <h6>{{ video.sub }}</h6>
+          {{ video.place }}
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <div class="text-center">
+              <ul class="youtube-cursor pagination pagination-large" style="padding-bottom: 0px; margin-bottom: 0px; padding-top:30px;">
+                <li>
+                  <span ng-click="previous()">
+                    <i class="fa fa-arrow-circle-left" style="padding-right: 8px;"></i> |
+                  </span>
+                </li>
+
+                <li>
+                  <a href="https://www.youtube.com/user/gaperiacaaso" target="_blank">
+                    <i class="fa fa-youtube"></i><strong> GAPeria</strong>
+                  </a>
+                </li>
+
+                <li>
+                  <span href="" ng-click="next()">
+                    | <i class="fa fa-arrow-circle-right" style="padding-left: 8px;"></i>
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
