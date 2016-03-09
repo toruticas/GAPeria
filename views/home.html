@@ -1,0 +1,62 @@
+<!-- <div class="carousel slide">
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="fill" style="background-image:url('/images/GAPeria_1.jpg');"></div>
+    </div>
+
+    <div class="item">
+      <div class="fill" style="background-image:url('/images/GAPeria_2.jpg');"></div>
+    </div>
+
+    <div class="item">
+      <div class="fill" style="background-image:url('/images/GAPeria_3.jpg');"></div>
+    </div>
+  </div>
+</div> -->
+
+  <uib-carousel active="active" interval="5000" no-wrap="false">
+    <uib-slide ng-repeat="slide in slides" index="$index">
+      <div class="fill" style="background-image:url('/images/GAPeria_3.jpg');">
+        <img class="fill" ng-src="{{slide}}">
+      </div>
+    </uib-slide>
+  </uib-carousel>
+  <!-- <uib-carousel class="slide" active="0" interval="5000" no-wrap="false">
+    <uib-slide ng-repeat="slide in slides">
+      <img class="fill" ng-src="{{slide}}" />
+    </uib-slide>
+  </uib-carousel> -->
+
+<div class="section text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <img class="logo-gaperia" style="max-width: 192px; min-width: 192px; margin-bottom: 20px;" src="media/logo_.png"/>
+        <p>O que eu não quero é uma taça <br> Tô aqui pra putaria <br> Sou GAPeria, toco com raça <br> E abafo qualquer outra bateria!</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="section-colored">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-4">
+        <h2><i class="fa fa-bookmark col-3-icon"></i> Sobre</h2>
+        <p style="text-align: justify;">Acesse a seção Sobre e conheça a história da GAPeria, e saiba mais mais sobre sua participação e influência no ambiente das baterias universitárias. Saiba também como fazer parte ou entrar em contato com a bateria.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-4">
+        <h2><i class="fa fa-picture-o col-3-icon"></i> Galeria</h2>
+        <p style="text-align: justify;">Acesse a seção Galeria e acesse as gravações de apresentações da GAPeria em eventos e torneios universitários em que participa e de alguns hinos e músicas relacionadas ao CAASO e a GAPeria.</p>
+      </div>
+
+      <div class="col-lg-4 col-md-4">
+        <h2><i class="fa fa-facebook-square col-3-icon"></i> Facebook</h2>
+        <p style="text-align: justify;">Acompanhe a GAPeria pelo Facebook e saiba mais sobre o que ocorre na bateria.</p>
+        <a href="https://www.facebook.com/gaperia" target="_blank">
+        <div class="fb-button"><i class="fa fa-facebook-square col-3-icon"></i> &nbsp;| &nbsp;GAPeria</div></a>
+      </div>
+    </div>
+  </div>
+</div>

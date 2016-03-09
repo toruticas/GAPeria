@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html ng-app="gaperia">
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Gustavo Schimiti">
+  <meta name="author" content="Rafael Mariano">
+
+  <title>GAPeria</title>
+  <link href="media/gaperia.ico" rel="icon" type="image/x-icon">
+
+  <!-- Node Modules -->
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+
+  <!-- Application -->
+  <link rel="stylesheet" href="build/stylesheets/application.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+        <a class="navbar-brand" href="#/" style="padding: 6px; padding-left: 15px;">
+        	<img src="/media/la.png" alt="La" />
+        </a>
+      </div>
+
+      <div class="collapse navbar-collapse navbar-ex1-collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#/about">Sobre</a></li>
+          <li><a href="#/gallery">Galeria</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div ui-view></div>
+
+  <div class="container">
+    <hr>
+    <footer style="margin: 30px 0px;">
+      <div class="row">
+        <div class="col-lg-12">
+          <p style="width: 50%; float: right; text-align: right;">
+            Copyright &copy; <br> GAPeria {{ localTime | date:"yyyy" }}
+          </p>
+          <p style="width: 50%; float: left;" class="gaperia">
+            <b>GAPeria</b> <br><span>Raça, Amor e Cajú!</span>
+          </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Node Modules -->
+  <script src="node_modules/lodash/lodash.min.js"></script>
+  <script src="node_modules/angular/angular.min.js"></script>
+  <script src="node_modules/angular-simple-logger/dist/angular-simple-logger.min.js"></script>
+  <script src="node_modules/angular-google-maps/dist/angular-google-maps.min.js"></script>
+  <script src="node_modules/angular-messages/angular-messages.min.js"></script>
+  <script src="node_modules/angular-ui-router/release/angular-ui-router.min.js"></script>
+  <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"></script>
+  <script src="node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js"></script>
+
+  <!-- Application -->
+  <script src="build/javascripts/application.js"></script>
+  <script src="build/javascripts/routes.js"></script>
+  <script src="build/javascripts/filters/range.js"></script>
+  <script src="build/javascripts/controllers/modal-ctrl.js"></script>
+  <script src="build/javascripts/controllers/home-ctrl.js"></script>
+  <script src="build/javascripts/controllers/about-ctrl.js"></script>
+  <script src="build/javascripts/controllers/gallery-ctrl.js"></script>
+</body>
+</html>
